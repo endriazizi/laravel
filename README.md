@@ -1,5 +1,15 @@
 "# laravel" 
 
+…or create a new repository on the command line
+```
+echo "# laravel" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin https://github.com/endriazizi/laravel.git
+git push -u origin master
+
+```
 
 Tree source with the following command:
 ```
