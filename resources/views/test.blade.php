@@ -8,8 +8,26 @@
 </head>
 
 <body>
+<!-- php comments -->
+{{-- blade comments --}}
+   <!-- <h1>About US,<?= $name, $age; ?></h1>-->
 
-    <h1>About US,<?= $name; ?></h1>
+     {{-- filter views with foreach --}}
+     
+<!--<ul>     
+     <?php foreach ($tasks as $task) : ?>
+
+        <li><?= $task; ?></li>
+
+     <?php endforeach; ?>
+</ul> -->
+
+{{-- equivalent to: --}}
+<ul>
+@foreach ($tasks as $task)
+    <li>This is user {{ $task }}</li>
+@endforeach
+</ul>
 
 </body>
 

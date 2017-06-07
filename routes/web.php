@@ -23,10 +23,25 @@ Route::get('/about', function (){
     return view('about')->with('name','wolrd');
 });
 
+/*
 Route::get('/test', function (){
     //a different way1
     $name='Endri';
+    $age=23;
     //return view('test',['name'=>$name]);
     //a different way2
-    return view('test', compact('name'));
+    return view('test', compact('name','age'));
+});*/
+
+Route::get('/test', function (){
+    //a different way1
+    $name='Endri';
+    $age=23;
+    $tasks=[
+        'test',
+        'test2',
+        'test3'
+    ];
+
+    return view('test', compact('name','age','tasks'));
 });
