@@ -1,5 +1,9 @@
 "# laravel app" 
 
+Intallation Laravel on windows globally
+https://www.youtube.com/watch?v=uODR0mgA8Eg
+
+
 …or create a new repository on the command line
 ```
 echo "# laravel" >> README.md
@@ -14,6 +18,11 @@ $ git checkout [name_of_your_new_branch]
 git branch
 
 git push --set-upstream origin development
+
+
+
+C:\PHP\htdocs\laravel>php artisan -V
+Laravel Framework 5.4.24
 
 ```
 
