@@ -28,6 +28,23 @@ Ctrl+ P on Windows an Command + P on Mac search "rweb" opens web.php under route
 
 Ctrl+ P on Windows v/welcome for views
 
+
+
+  git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+
+echo web: vendor/bin/heroku-php-apache2 public/ > Procfile
+$ git add .
+$ git commit -m "Procfile for Heroku"
+[master 1eb2be6] Procfile for Heroku
+ 1 file changed, 1 insertion(+)
+ create mode 100644 Procfile
+
 ```
 
 Blade is a Laravel engine to rappresent pages
