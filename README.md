@@ -24,7 +24,13 @@ git push --set-upstream origin development
 C:\PHP\htdocs\laravel>php artisan -V
 Laravel Framework 5.4.24
 
+Ctrl+ P on Windows an Command + P on Mac search "rweb" opens web.php under routes/web.php and so on for others files
+
+Ctrl+ P on Windows v/welcome for views
+
 ```
+
+Blade is a Laravel engine to rappresent pages
 
 Tree source with the following command:
 ```
