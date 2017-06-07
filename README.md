@@ -13,6 +13,8 @@ git checkout -b [name_of_your_new_branch]
 $ git checkout [name_of_your_new_branch]
 git branch
 
+git push --set-upstream origin development
+
 ```
 
 Tree source with the following command:
