@@ -12,9 +12,21 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    //specify secon argument here, I mean data
+    return view('welcome',[
+        'name'=>'world'
+    ]);
 });
 
 Route::get('/about', function (){
-    return view('about');
+    //a different way
+    return view('about')->with('name','wolrd');
+});
+
+Route::get('/test', function (){
+    //a different way1
+    $name='Endri';
+    //return view('test',['name'=>$name]);
+    //a different way2
+    return view('test', compact('name'));
 });

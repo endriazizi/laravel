@@ -9,7 +9,7 @@
 
 <body>
 
-    <h1>EndriAzizi</h1>
+    <h1>EndriAzizi, <?= $name; ?></h1>
 
 </body>
 
