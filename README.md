@@ -1,4 +1,4 @@
-"# laravel" 
+"# laravel app" 
 
 …or create a new repository on the command line
 ```
@@ -8,6 +8,10 @@ git add README.md
 git commit -m "first commit"
 git remote add origin https://github.com/endriazizi/laravel.git
 git push -u origin master
+
+git checkout -b [name_of_your_new_branch]
+$ git checkout [name_of_your_new_branch]
+git branch
 
 ```
 
