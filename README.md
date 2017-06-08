@@ -1,5 +1,9 @@
 "# laravel app" 
 
+INSERT INTO `tasks` (`id`, `body`, `created_at`, `updated_at`) VALUES
+(1, 'some text', '2017-06-06 22:00:00', '2017-06-20 22:00:00'),
+(2, 'some text new', '2017-06-09 22:00:00', '2017-06-22 22:00:00');
+
 Intallation Laravel on windows globally
 https://www.youtube.com/watch?v=uODR0mgA8Eg
 
