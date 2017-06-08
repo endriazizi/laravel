@@ -45,7 +45,7 @@ Route::get('/test', function (){
 
     return view('test', compact('name','age','tasks'));
 });*/
-Route::get('/test', function (){
+Route::get('/tasks', function (){
    //DB:: is a class after i specify a table's name and than we wanna get all records with ->get() method 
     //this is LARAVEL QUERY BUILDER, give us a really nice eloquent sintax to specify a table and any numebr of condition
     //
@@ -55,14 +55,16 @@ Route::get('/test', function (){
     //return $tasks; //returns json format data in the view loaclhost/test
 
     //i'm gonna pass that collection to our test view and once again 
-    return view('test', compact('tasks'));
+    return view('tasks/index', compact('tasks'));
 });
 
 //in laravel {id} is a wildcar ex: tasks/5
-Route::get('/test/tasks/{task}', function ($id){
+Route::get('/tasks/{task}', function ($id){
    //die and dump 'dd', helper funciot that laravel provides
-   dd($id);//http://localhost:8000/test/tasks/2
-    $tasks= DB::table('tasks')->get();
-  
-    return view('test', compact('tasks'));
+
+    $task= DB::table('tasks')->find($id);
+    //dd($id);     //http://localhost:8000/test/tasks/2
+ //dd($task); // http://localhost:8000/test/tasks/2
+ //  return view('tasks/show', compact('task')); //the same but with / separator
+    return view('tasks.show', compact('task'));
 });
