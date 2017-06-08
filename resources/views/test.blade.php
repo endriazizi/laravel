@@ -12,7 +12,11 @@
 {{-- blade comments --}}
 <ul>
 @foreach ($tasks as $task)
-  <li> {{$task->body}} </li>
+  <li> 
+  <a href="/tasks/{{$task->body}}">
+        {{$task->body}} 
+  </a>      
+  </li>
 @endforeach
 </ul>
 
