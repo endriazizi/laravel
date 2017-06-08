@@ -10,7 +10,7 @@
 <body>
 <!-- php comments -->
 {{-- blade comments --}}
-   <!-- <h1>About US,<?= $name, $age; ?></h1>-->
+
 
      {{-- filter views with foreach --}}
      
@@ -25,7 +25,8 @@
 {{-- equivalent to: --}}
 <ul>
 @foreach ($tasks as $task)
-    <li>This is user {{ $task }}</li>
+   {{--  <li>This is user {{ $task }}</li> --}}
+  <li> {{$task->body}} </li>
 @endforeach
 </ul>
 

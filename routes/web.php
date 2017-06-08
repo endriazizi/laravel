@@ -33,7 +33,7 @@ Route::get('/test', function (){
     return view('test', compact('name','age'));
 });*/
 
-Route::get('/test', function (){
+/*Route::get('/test', function (){
     //a different way1
     $name='Endri';
     $age=23;
@@ -44,4 +44,13 @@ Route::get('/test', function (){
     ];
 
     return view('test', compact('name','age','tasks'));
+});*/
+Route::get('/test', function (){
+   //DB:: is a class after i specify a table's name and than we wanna get all records with ->get() method 
+    $tasks= DB::table('tasks')->get();
+
+    //return $tasks; //returns json format data in the view loaclhost/test
+
+    //i'm gonna pass that collection to our test view and once again 
+    return view('test', compact('tasks'));
 });

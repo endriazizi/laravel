@@ -55,6 +55,8 @@ $ git commit -m "Procfile for Heroku"
  specifing the name of the table:
  php artisan make:migration create_tasks_table --create=tasks
 
+ Laravel 5.4 From Scratch: Working With the Query Builder 4:51
+
 
 
 ```
